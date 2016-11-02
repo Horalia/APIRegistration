@@ -1,3 +1,5 @@
+#Part One
+
 import requests
 
 new_dict = {'token':"3cafef0ef5e44f522dbd2eeb360c9cab",'github': "https://github.com/Horalia/APIRegistration.git"}
@@ -7,7 +9,7 @@ if(response.status_code == 400):
 print("Data sent status code: " + format(response.status_code))
 
 
-Part Two
+#Part Two
 
 import requests
 
@@ -24,7 +26,7 @@ if(response.status_code == 400):
     print("Data did not send.")
 print("Data sent status code: " + format(response.status_code))
 
- Part Three
+#Part Three
 
 import requests
 
@@ -43,7 +45,7 @@ for index, word in enumerate(apiHaystack["haystack"]):
 response = requests.post ("http://challenge.code2040.org/api/haystack/validate", json = data)
 print("Data sent status code: " + format(response.status_code))
 
-Part Four
+#Part Four
 import requests
 
 new_dict = {'token':"3cafef0ef5e44f522dbd2eeb360c9cab"}
